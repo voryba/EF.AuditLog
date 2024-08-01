@@ -1,6 +1,6 @@
 # AuditLog
 
-A plugin for Microsoft.EntityFrameworkCore that enables automatic recording of data change history.
+A plugin for `Microsoft.EntityFrameworkCore` that enables automatic recording of data change history.
 
 # How to use
 
