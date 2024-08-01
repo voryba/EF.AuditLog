@@ -22,7 +22,6 @@ internal sealed class AppDbContext : DbContext
         modelBuilder.Entity<UserRole>().HasKey(x => x.Id);
 
         modelBuilder
-	        .ApplyAuditSettings(options => options.OnlyConfiguredAudited())
             .ApplyAuditEntryConfiguration<LocalAuditEntity>()
             .ApplyAuditConfigurationsFromAssembly(typeof(AppDbContext).Assembly);
     }
